@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow"><!--staging-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página no encontrada | EnsalsateQ</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:,">
+</head>
+<body style="margin:0;min-height:100vh;display:grid;place-items:center;background:#1a0d11;color:#fbeff3;font-family:system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:24px">
+  <main>
+    <p style="margin:0 0 8px;font-size:15px;color:#cfaeb7">Error 404</p>
+    <h1 style="margin:0 0 16px;font-family:Georgia,serif;font-size:clamp(34px,7vw,64px);line-height:1.05">Esta página no existe</h1>
+    <p style="margin:0 0 28px;color:#cfaeb7;max-width:36ch">Puede que el enlace esté mal escrito o que la página se haya movido.</p>
+    <a id="inicio" href="/" style="display:inline-block;padding:14px 26px;border-radius:999px;background:#ff5c6c;color:#1a0d11;font-weight:700;text-decoration:none">Volver al inicio</a>
+  </main>
+  <script>
+    /* En GitHub Pages el sitio vive en /repositorio/; con dominio propio, en /. */
+    (function () {
+      var parts = location.pathname.split('/').filter(Boolean);
+      var base = (location.hostname.slice(-10) === '.github.io' && parts.length) ? '/' + parts[0] + '/' : '/';
+      document.getElementById('inicio').href = base;
+    })();
+  </script>
+</body>
+</html>
